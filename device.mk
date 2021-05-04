@@ -132,6 +132,9 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Dex
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
 
+# DebugFS
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Disable SF configstore
 PRODUCT_PACKAGES += \
     disable_configstore
