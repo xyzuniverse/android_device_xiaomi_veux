@@ -153,6 +153,9 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1
+
 PRODUCT_PACKAGES += \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor
