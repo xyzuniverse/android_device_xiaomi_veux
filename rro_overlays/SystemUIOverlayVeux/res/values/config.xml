@@ -82,4 +82,7 @@
         <item>0</item>
     </integer-array>
 
+    <!-- StatusBar burn-in protection -->
+    <bool name="config_disableStatusBarBurnInProtection">true</bool>
+
 </resources>
