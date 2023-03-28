@@ -158,6 +158,7 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.sf.blurs_are_expensive=1
 
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@3.0.vendor \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0.vendor
 
