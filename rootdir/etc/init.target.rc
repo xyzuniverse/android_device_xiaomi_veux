@@ -75,7 +75,7 @@ on early-fs
 
 on fs
     start hwservicemanager
-    mount_all --early
+    mount_all --early /vendor/etc/fstab.qcom
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     restorecon_recursive /mnt/vendor/persist
@@ -96,7 +96,10 @@ on late-fs
     wait_for_prop hwservicemanager.ready true
     #exec_start wait_for_keymaster
     start console
-    mount_all --late
+    mount_all --late /vendor/etc/fstab.qcom
+
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.zram
 
 on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
