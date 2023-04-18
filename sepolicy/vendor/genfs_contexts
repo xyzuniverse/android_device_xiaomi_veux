@@ -11,6 +11,12 @@ genfscon sysfs /devices/platform/soc/soc:fpc1020/wakeup_enable      u:object_r:v
 genfscon sysfs /devices/platform/soc/soc:goodix_fp                  u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:silead_fp                  u:object_r:vendor_sysfs_fingerprint:s0
 
+# Graphics
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon0/name u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon1/name u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon2/name u:object_r:vendor_sysfs_graphics:s0
+genfscon sysfs /sys/devices/platform/soc/soc:qcom,msm-ext-disp/extcon/extcon3/name u:object_r:vendor_sysfs_graphics:s0
+
 # SSR
 genfscon sysfs /devices/platform/soc/a400000.qcom,lpass/subsys[0-9]+/name           u:object_r:vendor_sysfs_ssr:s0
 genfscon sysfs /devices/platform/soc/a400000.qcom,lpass/subsys[0-9]+/restart_level  u:object_r:vendor_sysfs_ssr_toggle:s0
