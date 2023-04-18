@@ -477,6 +477,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.xiaomi_holi-multihal \
+    android.frameworks.sensorservice@1.0 \
     libsensorndkbridge
 
 # Service Tracker
