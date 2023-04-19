@@ -1,0 +1,2 @@
+allow system_server hal_camera_default:binder { call transfer };
+allow system_server hal_camera_default:fd *;
