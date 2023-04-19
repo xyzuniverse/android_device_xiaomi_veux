@@ -16,3 +16,11 @@ vendor.xiaomi.hardware.mlipay::IMlipayService                   u:object_r:hal_m
 # NFC
 vendor.nxp.nxpnfc::INxpNfc                                      u:object_r:hal_nfc_hwservice:s0
 vendor.nxp.nxpnfclegacy::INxpNfcLegacy                          u:object_r:hal_nfc_hwservice:s0
+
+# Radio
+vendor.qti.hardware.radio.qcriNvOpt::IqcriNvOpt                 u:object_r:hal_rilnv_hwservice:s0
+vendor.qti.hardware.radio.ims::IImsRadio                        u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio0               u:object_r:hal_telephony_hwservice:s0
+vendor.qti.hardware.radio.ims.IImsRadio/imsradio1               u:object_r:hal_telephony_hwservice:s0
+ro.vendor.ril.svlte1x                                           u:object_r:vendor_radio_prop:s0
+ro.vendor.ril.svdo                                              u:object_r:vendor_radio_prop:s0
