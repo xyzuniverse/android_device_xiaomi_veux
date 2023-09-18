@@ -263,8 +263,7 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    vendor.qti.media.c2@1.0-service
+    android.hardware.media.omx@1.0-service
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -289,9 +288,7 @@ PRODUCT_PACKAGES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.1.vendor \
-    libloc_net_iface \
-    libloc_net_iface.vendor
+    android.system.net.netd@1.1.vendor
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -317,11 +314,7 @@ PRODUCT_PACKAGES += \
     libOmxEvrcEnc \
     libOmxG711Enc \
     libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVidcCommon \
     libstagefrighthw \
-    libstagefrighthw.vendor \
     libstagefright_omx \
     libstagefright_foundation \
     libstagefright_softomx.vendor
@@ -504,7 +497,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/xiaomi
 
 # Spatial Audio
-PRODUCT_PACKAGES += \
+PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.dynamic.head_tracker.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.dynamic.head_tracker.xml
 
 # Telephony
